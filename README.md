@@ -61,7 +61,7 @@ This circuit arrangement is also min pulse width violation free as compared to o
 	<img width="1500" src="Images/ICG_tb.png" alt="Integrated Clock Gating Testbench"> 
 	<h5 align="center">Figure 5: Integrated Clock Gating Testbench</h5>
 	<img width="1500" src="Images/AND.png" alt="And gate schematic"> 
-	<h5 align="center">Figure 5: AND gate schematic</h5>
+	<h5 align="center">Figure 6: AND gate schematic</h5>
 	<img width="1500" src="Images/Inverter.png" alt="Inverter schematic"> 
 	<h5 align="center">Figure 7: Inverter schematic</h5>
 	<img width="1500" src="Images/TG.png" alt="Transmission gate schematic"> 
@@ -186,7 +186,7 @@ c5 icg_out gnd! c=0.01f
 - After a lot of Trail and error found the W/L values of pMOS and nMOS such that both have approximately equal rise and fall time.
 
 ## Limitations
-- Unnecessary using ICG's on design may increase overall area of the chip, So we can apply to particular set of flops having common enable signal.
+- Unnecessary using ICG's on design may increase overall area of the chip, So we have apply to flops having common enable signal which are more than bit width value.
 
 ## References
 
