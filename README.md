@@ -29,7 +29,7 @@ Here when CLK is 0, Enable is (0,1), g1 is ON and output from g1 is (1,0), g2 pa
 
 <p align="center">
 	<img width="400" src="Images/Dlatch.png" alt="Negetive level sensitive latch"> 
-	<h6 align="center">Figure 1: Latch based ICG</h6>
+	<h5 align="center">Figure 1: Latch based ICG</h5>
 </p>
 
 In summary when CLK = 0, Dlatch is enabled hence output from Dlatch will change as per enable signal, due to AND gate, the output of ICG = 0 as one of input of AND is 0, When CLK = 1, Dlatch is disabled hence output will be of previous stored value as one of input of AND is 1.
@@ -38,13 +38,15 @@ This circuit arrangement is also min pulse width violation free as compared to o
 
 ## Reference_Circuit
 
-![refference ICG Schematic](Images/ref_ICG_sch.png)
+<p align="center">
+	<img width="600" src="Images/ref_ICG_sch.png" alt="refference ICG Schematic"> 
+	<h5 align="center">Figure 2: Gate level schematic</h5>
+</p>
 
-![refference ICG Trans](Images/ref_ICG_trans.png)
-
-Recreated the reference diagram from the [source](https://curve.carleton.ca/5ff0a03b-3cf7-42f8-ab3e-cb9a1379b43a) in Microsoft Visio 2016.
-
-
+<p align="center">
+	<img width="1100" src="Images/ref_ICG_trans.png" alt="refference ICG Trans"> 
+	<h5 align="center">Figure 3: Transistor level schematic</h5>
+	</p>
 ## Implementation
 
 - Each D-Flip Flop is a CMOS transmission-gate based implementation, and is sized uniformly with (W/L)pFET/(W/L)nFET = (0.55u/0.15u)/(0.42u/0.15u). 
