@@ -29,12 +29,15 @@ Here when CLK is 0, Enable is (0,1), g1 is ON and output from g1 is (1,0), g2 pa
 
 ![Negetive level sensitive latch](Images/Dlatch.png)
 
-
+In summary when CLK = 0, Dlatch is enabled hence output from Dlatch will change as per enable signal, due to AND gate, the output of ICG = 0 as one of input of AND is 0, When CLK = 1, Dlatch is disabled hence output will be of previous stored value as one of input of AND is 1.
+This circuit arrangement is also min pulse width violation free as compared to only AND based clock gating. Latch based clock gating passes one complete cycle of clock whenever the enable signal is High and stops cycle for which enable signal is low.
 
 
 ## Reference_Circuit
 
-![Hackathon2](https://user-images.githubusercontent.com/73732594/153037798-73c62c2a-b92a-4263-939f-9f9303abf294.png)
+![refference ICG Schematic](Images/ref_ICG_sch.png)
+
+![refference ICG Trans](Images/ref_ICG_trans.png)
 
 Recreated the reference diagram from the [source](https://curve.carleton.ca/5ff0a03b-3cf7-42f8-ab3e-cb9a1379b43a) in Microsoft Visio 2016.
 
