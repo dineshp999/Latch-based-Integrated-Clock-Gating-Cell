@@ -60,10 +60,12 @@ This circuit arrangement is also min pulse width violation free as compared to o
 	<h5 align="center">Figure 4: Integrated Clock Gating schematic</h5>
 	<img width="1500" src="Images/ICG_tb.png" alt="Integrated Clock Gating Testbench"> 
 	<h5 align="center">Figure 5: Integrated Clock Gating Testbench</h5>
-	<img width="1500" src="AND.png" alt="AND gate schematic"> 
-	<h5 align="center">Figure 6: AND gate schematic</h5>
+	<img width="1500" src="Images/AND.png" alt="And gate schematic"> 
+	<h5 align="center">Figure 5: AND gate schematic</h5>
 	<img width="1500" src="Images/Inverter.png" alt="Inverter schematic"> 
 	<h5 align="center">Figure 7: Inverter schematic</h5>
+	<img width="1500" src="Images/TG.png" alt="Transmission gate schematic"> 
+	<h5 align="center">Figure 8: Transmission gate schematic</h5>
 	</p>
 
 ## Schematic Netlist
