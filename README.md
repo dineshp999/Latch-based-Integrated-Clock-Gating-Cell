@@ -51,17 +51,10 @@ This circuit arrangement is also min pulse width violation free as compared to o
 
 ## Implementation
 
-- Each D-Flip Flop is a CMOS transmission-gate based implementation, and is sized uniformly with (W/L)pFET/(W/L)nFET = (0.55u/0.15u)/(0.42u/0.15u). 
-- It has total 16 transistors, thus 96 transistors for 6 flip-flops here.
-- An inverter circuit is used separately to provide clock and inverted clock inputs for the flip flops, with the standard sizing mentioned below.
-- For the inverter feeding the flop, and standard sizing for each inverter is taken to be (W/L)pFET/(W/L)nFET = (0.55u/0.15u)/(0.42u/0.15u)
-- The transistors in NAND gate is sized following the sizing rules as (W/L)pFET/(W/L)nFET = (1.1u/0.3u)/(1.1u/0.3u)
-- The inverter at the beginning of the inverter string leading to buffer string and hence clock output ports, has (W/L)pFET/(W/L)nFET = (1.26u/0.15u)/(0.42u/0.15u)
-- The inverter following it has (W/L)pFET/(W/L)nFET = (0.42u/0.15u)/(0.42u/0.15u). And the same sequence is repeated again for each output path inverter string.
-- The first buffer in the trio of buffers leading to output port has (W/L)pFET/(W/L)nFET = (0.55u/0.15u)/(0.42u/0.15u)
-- Subsequent buffers are scaled by a multiple of 5 leading to (W/L)pFET/(W/L)nFET = (2.75u/0.75u)/(2.1u/0.75u) and (13.75u/3.75u)/(10.5u/3.75u) respectively.
-- Total transistors used = 184 (92 each n and pFETS).
-- The FET model chosen is 01v8 model from sky130 PDK.
+- Integrated clock gating is implemented by using Inverter, AND and Transmissiongate.
+- The Aspect ratio(W/L) of pMOS is 0.03um/0.24um &  nMOS is 0.03um/0.12um
+- Total transistors used = 18 (9 nMOS & 9 pMOS).
+- The MOSFET model chosen is TT model from 28nm PDK.
 
 ## Schematic Netlist
 
