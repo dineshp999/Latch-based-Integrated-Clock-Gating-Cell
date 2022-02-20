@@ -1,7 +1,7 @@
 # Latch-based-Integrated-Clock-Gating-Cell
 The purpose of this Hackathon is to implement the proposed design in 28 nm PDK (Process Design Kit).
 
-This is a Report Submission for successful completion of Latch-based-Integrated-Clock-Gating-Cell design and simulation, As a result of literature survey conducted, for  [Cloud Based Analog IC Design Hackathon](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
+ As a result of literature survey and Implemantation, this is a final Report Submission for successful completion of Latch-based-Integrated-Clock-Gating-Cell design and simulation, for [Cloud Based Analog IC Design Hackathon](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -10,14 +10,12 @@ This is a Report Submission for successful completion of Latch-based-Integrated-
 4. [Implementation](#implementation)
 5. [Schematic Netlist](#schematic-netlist)
 6. [Simulation result](#simulation-result)
-7. [Methodology](#methodology)
-8. [Challenge](#challenge)
-9. [Troubleshooting](#troubleshooting)
-10. [Reproduce_waveforms](#reproduce_waveforms)
-11. [Limitations](#limitations)
-12. [References](#references)
-13. [Acknowledgements](#acknowledgements)
-14. [Author](#author)
+7. [Challenge](#challenge)
+8. [Troubleshooting](#troubleshooting)
+9. [Limitations](#limitations)
+10. [References](#references)
+11. [Acknowledgements](#acknowledgements)
+12. [Author](#author)
 
 ## Introduction
 
@@ -167,6 +165,15 @@ c5 icg_out gnd! c=0.01f
 	<img width="1100" src="Images/Waveform.png" alt="refference ICG Trans"> 
 	<h5 align="center">Figure 4: Waveform</h5>
 </p>.
+
+## Challenge
+- The real challange is to adjust W/L ratio of pMos and nMos such that both have approximately equal rise and fall time.
+
+## Troubleshooting
+- After a lot of Trail and error found the W/L values of pMOS and nMOS such that both have approximately equal rise and fall time.
+
+## Limitations
+- Unnecessary using ICG's on design may increase overall area of the chip, So we can apply to particular set of flops having common enable signal.
 
 ## References
 
