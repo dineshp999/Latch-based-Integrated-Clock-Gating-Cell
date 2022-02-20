@@ -1,7 +1,7 @@
 # Latch-based-Integrated-Clock-Gating-Cell
 The purpose of this Hackathon is to implement the proposed design in 28 nm PDK (Process Design Kit).
 
-This is a Report Submission for successful completion of Latch-based-Integrated-Clock-Gating-Cell simulating the proposed circuit as a result of literature survey conducted, for  [Cloud Based Analog IC Design Hackathon](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
+This is a Report Submission for successful completion of Latch-based-Integrated-Clock-Gating-Cell design and simulation, As a result of literature survey conducted, for  [Cloud Based Analog IC Design Hackathon](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -10,14 +10,14 @@ This is a Report Submission for successful completion of Latch-based-Integrated-
 4. [Implementation](#implementation)
 5. [Schematic Netlist](#schematic-netlist)
 6. [Simulation result](#simulation-result)
-- [Methodology](#methodology)
-- [Challenge](#challenge)
-- [Troubleshooting](#troubleshooting)
-- [Reproduce_waveforms](#reproduce_waveforms)
-- [Limitations](#limitations)
-- [References](#references)
-- [Acknowledgements](#acknowledgements)
-- [Author](#author)
+7. [Methodology](#methodology)
+8. [Challenge](#challenge)
+9. [Troubleshooting](#troubleshooting)
+10. [Reproduce_waveforms](#reproduce_waveforms)
+11. [Limitations](#limitations)
+12. [References](#references)
+13. [Acknowledgements](#acknowledgements)
+14. [Author](#author)
 
 ## Introduction
 
@@ -51,8 +51,9 @@ This circuit arrangement is also min pulse width violation free as compared to o
 
 ## Implementation
 
-- Integrated clock gating is implemented by using Inverter, AND and Transmissiongate.
-- The Aspect ratio(W/L) of pMOS is 0.03um/0.24um &  nMOS is 0.03um/0.12um
+- Integrated clock gating is implemented by using Inverter, AND and Transmission gate.
+- The Aspect ratio(W/L) of pMOS is 0.03um/0.24um &  nMOS is 0.03um/0.12um.
+- Inverter, AND and Transmission gate are implemeted first then by the help of these sub-design ICG is realised.
 - Total transistors used = 18 (9 nMOS & 9 pMOS).
 - The MOSFET model chosen is TT model from 28nm PDK.
 
