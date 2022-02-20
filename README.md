@@ -52,7 +52,7 @@ This circuit arrangement is also min pulse width violation free as compared to o
 ## Implementation
 
 - Integrated clock gating is implemented by using Inverter, AND and Transmission gate.
-- The Aspect ratio(W/L) of pMOS is 0.03um/0.24um &  nMOS is 0.03um/0.12um.
+- The Aspect ratio of pMOS and nMOS is choosen such a way that it has approximate same transaction and fall time (i.e., The Aspect ratio(W/L) of pMOS is 0.03um/0.24um &  nMOS is 0.03um/0.12um).
 - Inverter, AND and Transmission gate are implemeted first then by the help of these sub-design ICG is realised.
 - Total transistors used = 18 (9 nMOS & 9 pMOS).
 - The MOSFET model chosen is TT model from 28nm PDK.
