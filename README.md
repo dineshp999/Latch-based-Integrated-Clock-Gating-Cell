@@ -176,7 +176,7 @@ c5 icg_out gnd! c=0.01f
 
 <p align="center">
 	<img width="1100" src="Images/Waveform.png" alt="refference ICG Trans"> 
-	<h5 align="center">Figure 4: Waveform</h5>
+	<h5 align="center">Figure 9: Waveform</h5>
 </p>.
 
 ## Challenge
