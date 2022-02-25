@@ -11,11 +11,10 @@ The purpose of this Hackathon is to implement the proposed design in 28 nm PDK (
 5. [Schematic Netlist](#schematic-netlist)
 6. [Simulation result](#simulation-result)
 7. [Challenge](#challenge)
-8. [Troubleshooting](#troubleshooting)
-9. [Limitations](#limitations)
-10. [References](#references)
-11. [Acknowledgements](#acknowledgements)
-12. [Author](#author)
+8. [Limitations](#limitations)
+9. [References](#references)
+10. [Acknowledgements](#acknowledgements)
+11. [Author](#author)
 
 ## Introduction
 
@@ -187,11 +186,8 @@ One other thing we need to keep in mind is that here we have loop for which an i
 ## Challenge
 - The real challange is to adjust W/L ratio of pMos and nMos such that both have approximately equal rise and fall time.
 
-## Troubleshooting
-- After a lot of Trail and error found the W/L values of pMOS and nMOS such that both have approximately equal rise and fall time.
-
 ## Limitations
-- Unnecessary using ICG's on design may increase overall area of the chip, So we have apply to flops having common enable signal which are more than bit width value.
+- Unnecessary using ICG's on design may increase overall area of the chip, So we have apply only to flops having common enable signal which are more than bit width value.
 
 ## References
 
