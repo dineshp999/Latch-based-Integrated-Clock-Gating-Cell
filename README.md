@@ -1,5 +1,5 @@
 # Latch-based-Integrated-Clock-Gating-Cell
-The purpose of this Hackathon is to implement the proposed design in 28 nm PDK (Process Design Kit).
+The purpose of this Hackathon is to implement the proposed design in 28 nm PDK (Process Design Kit) suing CMOS technology.
 
  As a result of literature survey and Implemantation, this is a final Report Submission for successful completion of Latch-based-Integrated-Clock-Gating-Cell design and simulation, for [Cloud Based Analog IC Design Hackathon](https://www.iith.ac.in/events/2022/02/15/Cloud-Based-Analog-IC-Design-Hackathon/)
 
@@ -19,7 +19,8 @@ The purpose of this Hackathon is to implement the proposed design in 28 nm PDK (
 
 ## Introduction
 
-Now a days in ASIC design there are billions of cells due to which power becomes a crucial factor in determining the quality of a chip. Due do this huge no of cells, there’s a high switching activity of clock, which consumes a lot of dynamic power. So, in order to reduce dynamic power consumption in chip, one of the techniques used is clock gating. For instance If the flops work based on enable signal there is no need of providing each and every pulse of clock, instead of that we provide a selective pulse to flop which reduces the switching factor of clock.
+Now a days battery backup time became increasingly crucial as firms began to load more and more features and applications onto battery-operated devices (mobiles, handhelds, and laptops). Customers' power consumption becomes an increasingly relevant criterion over time. As a result, all chip firms that make products for battery-powered devices are concentrating on reducing power usage. Efforts are being made to reduce both dynamic and static power consumption. Companies began to reduce the nominal voltages inside the semiconductor, but this, too, was restricted by technology. So a lot of low power design techniques started to get employed during the Chip Design process to reduce both static and dynamic power consumption
+So, in order to reduce dynamic power consumption in chip, one of the techniques used is clock gating. Here instead of giving each and every pulse to a register (or set of registers) instead we provide a selective pulse to flop which reduces the switching factor of clock, which eventually reduces the dynamic power consumption. This helps in low power consumption from power source. for eg: if a set of registers are only active only for 2 clock pulses out of 10 clock pulses, there is no sense in applying the clock for remaining 8 pulses, if we do so there will be unnecessarily draining of battery. so instead we can apply only 2 pulses where the registers are active.
 
 ## Working
 
@@ -173,6 +174,10 @@ c5 icg_out gnd! c=0.01f
 ## Simulation result
 
 - Custom Compiler Waveform
+
+### Transient Analysis:
+After creating and saving the schematic go to 'Tools' and open 'Primewave' to start the simulation. In the Primewave select the 'model file' i.e the '28nm PDK's .lib file presentin the HSPICE folder. After this select the 'tran' analysis in the analysis window and give the 'Start', 'Stop', and 'Step Size' parameters and save it. Then add the outputs which needs to be plotted by selecting the nets on the schematic.
+One other thing we need to keep in mind is that here we have loop for which an initial condition needs to be declared. For that, we have to go to 'Setup -> Convergance aids' and select the net for which we want to set an initial condition.Then go to 'Simulations -> Netlist and Run' to generate a netlist and run the simulation to get the below output.
 
 <p align="center">
 	<img width="1100" src="Images/Waveform.png" alt="refference ICG Trans"> 
